@@ -1,10 +1,11 @@
-body {
-	margin: 0;
-	padding: 0;
+@import "variables";
+@import "mixins";
+
+html, body {
 	font-family: tahoma;
 	font-size: 16px;
 	line-height: 1.6;
-	background: #EEE;
+	background: #FFF;
 }
 a {
 	color: #333;
