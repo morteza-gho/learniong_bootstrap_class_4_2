@@ -2,5 +2,22 @@
 @import "home";
 @import "posts";
 
+.box {
+	background: lighten($gray, 15%);
+	border: 1px solid $gray;
+	min-height: 100px;
+	margin: $gap auto;
+	@include brRadius();
+}
 
+.box1 {
+	@extend .box;
+	width: 300px;
+}
+
+.box2 {
+	@extend .box;
+	width: 500px;
+	min-height: 180px;
+}
 
