@@ -219,4 +219,32 @@ a {
   margin: 0 10px;
 }
 
+.files {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.files li {
+  list-style-type: none;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.files li.icon-pdf {
+  background-image: url("./images/icon-pdf.png");
+}
+.files li.icon-doc {
+  background-image: url("./images/icon-doc.png");
+}
+.files li.icon-xls {
+  background-image: url("./images/icon-xls.png");
+}
+.files li.icon-jpg {
+  background-image: url("./images/icon-jpg.png");
+}
+.files li.icon-psd {
+  background-image: url("./images/icon-psd.png");
+}
+
 /*# sourceMappingURL=style.css.map */
