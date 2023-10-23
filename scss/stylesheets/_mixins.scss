@@ -12,3 +12,11 @@
 	-o-box-shadow: $val;
 	box-shadow: $val;
 }
+
+@mixin ltrRtl($property, $ltrVal, $rtlVal) {
+	#{$property}: $ltrVal;
+
+	[dir='rtl'] & {
+		#{$property}: $rtlVal
+	}
+}

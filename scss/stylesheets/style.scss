@@ -50,3 +50,13 @@ $fileIcons: pdf doc xls jpg psd;
 	}
 
 } // .files
+
+.site-title {
+	@include ltrRtl(text-align, left, right);
+}
+.site-description {
+	@include ltrRtl(text-align, left, right);
+}
+.test-button {
+	@include ltrRtl(float, right, left);
+}

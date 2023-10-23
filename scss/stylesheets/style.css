@@ -247,4 +247,25 @@ a {
   background-image: url("./images/icon-psd.png");
 }
 
+.site-title {
+  text-align: left;
+}
+[dir=rtl] .site-title {
+  text-align: right;
+}
+
+.site-description {
+  text-align: left;
+}
+[dir=rtl] .site-description {
+  text-align: right;
+}
+
+.test-button {
+  float: right;
+}
+[dir=rtl] .test-button {
+  float: left;
+}
+
 /*# sourceMappingURL=style.css.map */
