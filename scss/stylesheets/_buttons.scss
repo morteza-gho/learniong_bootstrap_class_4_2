@@ -1,0 +1,134 @@
+
+.btn {
+	cursor: pointer;
+	border: 2px solid;
+	color: #FFF;
+	@extend .transition300;
+	@include brRadius();
+
+	&.btn-primary {
+		background: $primaryColor;
+		border-color: darken($primaryColor, 10%);
+
+		&:hover, &:focus {
+			background: darken($primaryColor, 5%);
+		}
+	}
+	&.btn-secondary {
+		background: $secondaryColor;
+		border-color: darken($secondaryColor, 10%);
+
+		&:hover, &:focus {
+			background: darken($secondaryColor, 5%);
+		}
+	}
+	&.btn-success {
+		background: $successColor;
+		border-color: darken($successColor, 10%);
+
+		&:hover, &:focus {
+			background: darken($successColor, 5%);
+		}
+	}
+	&.btn-warning {
+		background: $warningColor;
+		border-color: darken($warningColor, 10%);
+
+		&:hover, &:focus {
+			background: darken($warningColor, 5%);
+		}
+	}
+	&.btn-danger {
+		background: $dangerColor;
+		border-color: darken($dangerColor, 10%);
+
+		&:hover, &:focus {
+			background: darken($dangerColor, 5%);
+		}
+	}
+
+	&.btn-sm {
+		padding: $gap/2 $gap;
+		font-size: 14px;
+		font-weight: 400;
+		@include brRadius($radius/2);
+	}
+	&.btn-md {
+		padding: $gap $gap*2;
+		font-size: 16px;
+		font-weight: 500;
+	}
+	&.btn-lg {
+		padding: $gap*2 $gap*3;
+		font-size: 18px;
+		font-weight: 700;
+	}
+
+	&.btn-outline {
+		background: transparent;
+
+		&:hover, &:focus {
+			color: #FFF !important;
+		}
+
+		&[disabled] {
+			&:hover, &:focus {
+				background: transparent;
+			}
+		}
+
+		&.btn-primary {
+			color: $primaryColor;
+
+			&[disabled] {
+				&:hover, &:focus {
+					color: $primaryColor !important;
+				}
+			}
+		}
+		&.btn-secondary {
+			color: $secondaryColor;;
+
+			&[disabled] {
+				&:hover, &:focus {
+					color: $primaryColor !important;
+				}
+			}
+		}
+		&.btn-success {
+			color: $successColor;;
+
+			&[disabled] {
+				&:hover, &:focus {
+					color: $successColor !important;
+				}
+			}
+		}
+		&.btn-warning {
+			color: $warningColor;;
+
+			&[disabled] {
+				&:hover, &:focus {
+					color: $warningColor !important;
+				}
+			}
+		}
+		&.btn-danger {
+			color: $dangerColor;
+
+			&[disabled] {
+				&:hover, &:focus {
+					color: $dangerColor !important;
+				}
+			}
+		}
+
+	} // &.btn-outline
+
+	&[disabled] {
+		opacity: .5;
+		cursor: not-allowed;
+	}
+
+} // .btn
+
